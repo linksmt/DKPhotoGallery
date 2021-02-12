@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2BC28AB3252DF7580062D5B2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC28AB2252DF7580062D5B2 /* CoreServices.framework */; };
+		2BF2F75F25D6DEC8000AB6CA /* SwiftyGif.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F75E25D6DEC8000AB6CA /* SwiftyGif.xcframework */; };
+		2BF2F76025D6DEC8000AB6CA /* SwiftyGif.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F75E25D6DEC8000AB6CA /* SwiftyGif.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BF2F76525D6DEF3000AB6CA /* SDWebImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F76325D6DEF3000AB6CA /* SDWebImage.xcframework */; };
+		2BF2F76625D6DEF4000AB6CA /* SDWebImage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F76325D6DEF3000AB6CA /* SDWebImage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BF2F76725D6DEF4000AB6CA /* SDWebImageMapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F76425D6DEF3000AB6CA /* SDWebImageMapKit.xcframework */; };
+		2BF2F76825D6DEF4000AB6CA /* SDWebImageMapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F76425D6DEF3000AB6CA /* SDWebImageMapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C565E32216B43DA00A16B22 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9C565E2E216B43DA00A16B22 /* Base.lproj */; };
 		9C565E33216B43DA00A16B22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C565E2F216B43DA00A16B22 /* Images.xcassets */; };
 		9C565E34216B43DA00A16B22 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9C565E30216B43DA00A16B22 /* zh-Hans.lproj */; };
@@ -56,8 +62,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2BF2F76125D6DEC8000AB6CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2BF2F76025D6DEC8000AB6CA /* SwiftyGif.xcframework in Embed Frameworks */,
+				2BF2F76825D6DEF4000AB6CA /* SDWebImageMapKit.xcframework in Embed Frameworks */,
+				2BF2F76625D6DEF4000AB6CA /* SDWebImage.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2BC28AB2252DF7580062D5B2 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		2BF2F75E25D6DEC8000AB6CA /* SwiftyGif.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyGif.xcframework; path = Carthage/Build/SwiftyGif.xcframework; sourceTree = "<group>"; };
+		2BF2F76325D6DEF3000AB6CA /* SDWebImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDWebImage.xcframework; path = Carthage/Build/SDWebImage.xcframework; sourceTree = "<group>"; };
+		2BF2F76425D6DEF3000AB6CA /* SDWebImageMapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDWebImageMapKit.xcframework; path = Carthage/Build/SDWebImageMapKit.xcframework; sourceTree = "<group>"; };
 		9C08E2A5215B6280003BA0DA /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		9C17CC0E215B39C1001A6BCA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C565E26216B42AE00A16B22 /* DKPhotoGallery.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKPhotoGallery.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,10 +133,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF878DD215B2F85003F2667 /* WebKit.framework in Frameworks */,
+				2BF2F76725D6DEF4000AB6CA /* SDWebImageMapKit.xcframework in Frameworks */,
 				9CF878DB215B2F7C003F2667 /* AVKit.framework in Frameworks */,
 				9CF878D9215B2F74003F2667 /* Photos.framework in Frameworks */,
 				9C8BA70A215B2BC0005267E7 /* ImageIO.framework in Frameworks */,
+				2BF2F75F25D6DEC8000AB6CA /* SwiftyGif.xcframework in Frameworks */,
 				2BC28AB3252DF7580062D5B2 /* CoreServices.framework in Frameworks */,
+				2BF2F76525D6DEF3000AB6CA /* SDWebImage.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +183,9 @@
 		9CDF249D215A46FD00DF2C79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BF2F76325D6DEF3000AB6CA /* SDWebImage.xcframework */,
+				2BF2F76425D6DEF3000AB6CA /* SDWebImageMapKit.xcframework */,
+				2BF2F75E25D6DEC8000AB6CA /* SwiftyGif.xcframework */,
 				2BC28AB2252DF7580062D5B2 /* CoreServices.framework */,
 				9CF878DE215B2F91003F2667 /* MobileCoreServices.framework */,
 				9CF878DC215B2F85003F2667 /* WebKit.framework */,
@@ -292,6 +323,7 @@
 				9CDF248A215A46CE00DF2C79 /* Sources */,
 				9CDF248B215A46CE00DF2C79 /* Frameworks */,
 				9CDF248C215A46CE00DF2C79 /* Resources */,
+				2BF2F76125D6DEC8000AB6CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,7 +341,7 @@
 		9CDF2485215A46CE00DF2C79 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Ao Zhang";
 				TargetAttributes = {
 					9C565E25216B42AE00A16B22 = {
@@ -417,7 +449,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DKPhotoGalleryBundle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangao0086.DKPhotoGalleryBundle;
 				PRODUCT_NAME = DKPhotoGallery;
@@ -437,7 +469,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DKPhotoGalleryBundle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangao0086.DKPhotoGalleryBundle;
 				PRODUCT_NAME = DKPhotoGallery;
@@ -473,6 +505,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -537,6 +570,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -587,7 +621,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,7 +656,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
