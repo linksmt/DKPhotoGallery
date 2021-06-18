@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		2BC28AB3252DF7580062D5B2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC28AB2252DF7580062D5B2 /* CoreServices.framework */; };
 		2BF2F75F25D6DEC8000AB6CA /* SwiftyGif.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F75E25D6DEC8000AB6CA /* SwiftyGif.xcframework */; };
-		2BF2F76025D6DEC8000AB6CA /* SwiftyGif.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F75E25D6DEC8000AB6CA /* SwiftyGif.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BF2F76525D6DEF3000AB6CA /* SDWebImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F76325D6DEF3000AB6CA /* SDWebImage.xcframework */; };
-		2BF2F76625D6DEF4000AB6CA /* SDWebImage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F76325D6DEF3000AB6CA /* SDWebImage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BF2F76725D6DEF4000AB6CA /* SDWebImageMapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F76425D6DEF3000AB6CA /* SDWebImageMapKit.xcframework */; };
-		2BF2F76825D6DEF4000AB6CA /* SDWebImageMapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF2F76425D6DEF3000AB6CA /* SDWebImageMapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C565E32216B43DA00A16B22 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9C565E2E216B43DA00A16B22 /* Base.lproj */; };
 		9C565E33216B43DA00A16B22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C565E2F216B43DA00A16B22 /* Images.xcassets */; };
 		9C565E34216B43DA00A16B22 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9C565E30216B43DA00A16B22 /* zh-Hans.lproj */; };
@@ -61,22 +58,6 @@
 			remoteInfo = DKPhotoGalleryBundle;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2BF2F76125D6DEC8000AB6CA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2BF2F76025D6DEC8000AB6CA /* SwiftyGif.xcframework in Embed Frameworks */,
-				2BF2F76825D6DEF4000AB6CA /* SDWebImageMapKit.xcframework in Embed Frameworks */,
-				2BF2F76625D6DEF4000AB6CA /* SDWebImage.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2BC28AB2252DF7580062D5B2 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
@@ -323,7 +304,6 @@
 				9CDF248A215A46CE00DF2C79 /* Sources */,
 				9CDF248B215A46CE00DF2C79 /* Frameworks */,
 				9CDF248C215A46CE00DF2C79 /* Resources */,
-				2BF2F76125D6DEC8000AB6CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
